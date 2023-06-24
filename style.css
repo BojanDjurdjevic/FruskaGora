@@ -1,0 +1,333 @@
+/*===============GENERAL=================*/
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+ 
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+/*===============HEADER=================*/
+#home {
+    background-color: #7FA01B /* #23731a */ ;
+    height: 6rem; width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1
+}
+.fade-in {
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1
+}
+header img {
+    width: 6rem;
+}
+header .btn {
+    width: 3rem;
+    position: absolute;
+    top: 1.5rem;
+    right: 2.5rem;
+    display: none;
+}
+header nav {
+    margin-top: 2.2rem;
+}
+header a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    padding: 1rem;
+}
+#mobile-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; height: 100%;
+    background-color: #23731a;
+    opacity: 0.85;
+    z-index: 5;
+}
+#mobile-menu a {
+    font-size: 2.2rem;
+}
+#closebtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.2rem solid white;
+    border-radius: 100%;
+    color: white;
+    font-size: 2rem;
+    width: 3rem; height: 3rem;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+}
+
+@media all and (max-width: 860px) {
+    header nav {
+        display: none;
+    }
+    header .btn {
+        display: inline-block;
+    }
+}
+@media all and (min-width: 861px) and (max-width: 1215px) {
+    header a {
+        margin-left: 0;
+    }
+    header {grid-template-columns: 1fr 4fr;}
+}
+/*=================MAIN==================*/
+.picture {
+    width: 100vw;
+    height: 100vh;
+} 
+#logo {
+    width: 15rem;
+    position: absolute;
+    top: 50vh;
+    left: 40vw;
+}
+#left-bg {
+    width: 5rem;
+    height: 6rem;
+    background-color: rgb(38, 36, 36);
+    opacity: 0.7;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+#right-bg {
+    width: 5rem;
+    height: 6rem;
+    background-color: rgb(38, 36, 36);
+    opacity: 0.7;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+#left-arrow {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-bottom: 0.4rem solid white;
+    border-left: 0.4rem solid white;
+    transform: rotate(45deg);
+}
+#right-arrow {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-bottom: 0.4rem solid white;
+    border-right: 0.4rem solid white;
+    transform: rotate(-45deg);
+}
+#hero1 {
+    background-image: url(./Fruškać/Hero1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: block;
+}
+#hero2 {
+    background-image: url(./Fruškać/Hero2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: none;
+}
+#hero3 {
+    background-image: url(./Fruškać/Hero4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: none;
+}
+#hero4 {
+    background-image: url(./Fruškać/Hero5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: none;
+}
+#hero5 {
+    background-image: url(./Fruškać/Hero6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: none;
+}
+#hero6 {
+    background-image: url(./Fruškać/Hero7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: none;
+}
+@media all and (max-width: 540px) {
+    #logo {
+        width: 14rem;
+        position: absolute;
+        top: 50vh;
+        left: 30vw;
+    }
+}
+/*===================SECTION==================*/
+.section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 2rem;
+    background-color: #E7F0F9;
+}
+.thumbnail {
+    width: 25rem; height: 25rem;
+    box-shadow: 0 0 0.8rem 0.8rem lightgray;
+}
+.p {
+    padding: 0.5rem;
+}
+#section-img1 {
+    background-image: url(./Fruškać/Section1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#section-img2 {
+    background-image: url(./Fruškać/Section2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#section-img3 {
+    background-image: url(./Fruškać/Section3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+@media all and (max-width: 960px) {
+    .section {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .p {
+        margin-top: 1rem;
+        max-width: 25rem;
+    }
+    .p p:nth-last-of-type(1) {
+        display: none;
+    }
+}
+/*======================SERVICES====================*/
+.services {
+    height: 55vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-content: center;
+    background-color: #464646;
+}
+.services img {
+    width: 10rem;
+}
+.h h1 {
+    background-color: #464646;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+.h h1 span {
+    opacity: 0;
+    transition: all 0.5s ease;
+    transform: translateX(4rem);
+    display: inline-block;
+}
+.h .fadeMove {
+    transform: translateX(0);
+    opacity: 1;
+}
+@media all and (max-width: 860px) {
+    .services {
+        grid-template-columns: 1fr;
+        align-content: space-between;
+        padding: 1rem;
+    }
+}
+/*===========================CONTACT========================*/
+#form {
+    background-color: #E7F0F9;
+}
+#registruj {
+    max-width: 10rem; height: 3rem;
+    border-radius: 30%;
+    background-color: rgb(113, 15, 204);
+    color: white;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    /*box-shadow: 0 0 0.1rem 0.1rem #464646;*/
+}
+input {
+    width: 30rem; height: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form div {
+    display: flex;
+    flex-direction: column;
+}
+form h1 {
+    margin: 1rem;
+}
+li {
+    color: red;
+}
+/*==========================MAPS=====================*/
+iframe {
+    width: 100%; height: 60vh;
+}
+/*======================FOOTER====================*/
+footer {
+    background-color: #E7F0F9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4.4rem;
+}
+#logo2 img {
+    width: 4rem;
+}
+@media all and (max-width: 500px) {
+    #logo2 {display: none;}
+}
