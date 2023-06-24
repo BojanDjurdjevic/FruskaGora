@@ -274,7 +274,7 @@ header a {
     transform: translateX(0);
     opacity: 1;
 }
-@media all and (max-width: 860px) {
+@media all and (max-width: 560px) {
     .services {
         grid-template-columns: 1fr;
         align-content: space-between;
