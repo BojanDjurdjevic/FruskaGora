@@ -195,7 +195,7 @@ header a {
         width: 14rem;
         position: absolute;
         top: 50vh;
-        left: 30vw;
+        left: 25vw;
     }
 }
 /*===================SECTION==================*/
@@ -240,6 +240,10 @@ header a {
     }
     .p p:nth-last-of-type(1) {
         display: none;
+    }
+    .thumbnail {
+        width: 20rem; height: 20rem;
+        box-shadow: 0 0 0.6rem 0.6rem lightgray;
     }
 }
 /*======================SERVICES====================*/
@@ -312,6 +316,13 @@ form h1 {
 }
 li {
     color: red;
+}
+@media all and (max-width: 860px) {
+    input {
+        width: 20rem; height: 3rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
 }
 /*==========================MAPS=====================*/
 iframe {
