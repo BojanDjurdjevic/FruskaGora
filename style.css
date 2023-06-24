@@ -237,7 +237,6 @@ header a {
     }
     .p {
         margin-top: 1rem;
-        max-width: 25rem;
     }
     .p p:nth-last-of-type(1) {
         display: none;
@@ -276,6 +275,7 @@ header a {
         grid-template-columns: 1fr;
         align-content: space-between;
         padding: 1rem;
+        height: 62vh;
     }
 }
 /*===========================CONTACT========================*/
